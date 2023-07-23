@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="../css/estilo.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="../js/animacao.js"></script>
+    <script src="../js/snowstorm.js"></script>
+
+<style>
+
+body {
+    border-top: 72px solid #01426a;
+    border-bottom: 72px solid #01426a;
+}
+
+body .frutaAnimada:nth-child(3n) {
+    filter: hue-rotate(-0.25turn);
+}
+body .frutaAnimada:nth-last-child(3n) {
+    filter: hue-rotate(-0.50turn);
+}
+
+</style>
+
+</head>
+
+<body style="display: flex; flex-direction: column;  background-image: url(../img/Erro_bg.jpg);">
+        <h1 class="congrLeftTop" >PARABÉNS!!</h1>
+        <h1 class="congrLeftBottom">VOCÊ É FANTÁSTICO</h1>
+        <img class="atentoLogo" src="../img/Atento_logo.png">  
+        <img class="frutaAnimada" src="../img/Flor1.png">
+        <img class="frutaAnimada" src="../img/Flor2.png">
+        <img class="frutaAnimada" src="../img/Flor1.png">
+        <img class="frutaAnimada" src="../img/Flor2.png">
+        <img class="frutaAnimada" src="../img/Flor1.png">
+        <img class="frutaAnimada" src="../img/Flor2.png">
+    <a class="iniciarJogo pulse " href="../index.html"><button class="iniciarJogo btn-final">JOGAR NOVAMENTE</button></a>
+    <center><img style="width: 200px;" src="../img/Dapo.png"></center>
+</body>
+
+</html>
