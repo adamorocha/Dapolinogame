@@ -31,7 +31,7 @@ function moverImagens() {
     }
 }
 
-        setInterval(moverImagens, 1500); // Movimenta as imagens a cada 2 segundos
+        setInterval(moverImagens, 900); // Movimenta as imagens a cada 2 segundos
 
         // Inclua a biblioteca Anime.js no seu projeto para utilizar a função anime()
         // Contruido com Auxilio do CHATGPT
