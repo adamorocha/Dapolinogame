@@ -17,14 +17,27 @@ body {
   background-size: cover;
 }
 
-.bd-index {
-  background-image: url(../img/Erro_bg.jpg);
-}
-
 section {
   display: flex;
   margin: auto;
   height: 33.33%;
+}
+
+.bd-index {
+  background-image: url(../img/Erro_bg.jpg);
+}
+
+
+.bd-index section:first-child {
+  display: flex;
+  margin: auto;
+  height: 10%;
+}
+
+.bd-index section:not(:first-child) {
+  display: flex;
+  margin: auto;
+  height: 30%;
 }
 
 /*Estilo dos botões Iniciar, Prox Fase e botão de tela respostas errada*/
@@ -34,8 +47,8 @@ section {
   height: 80px;
   border: 0px;
   font-weight: bold;
-  color: rgba(8, 1, 75);
-  background-color: #ffc400;
+  color: #01426a;
+  background-color: #ffffff;
   box-shadow: 8px 9px 3px -3px rgba(19, 19, 19, 0.603);
   cursor: pointer;
   font-size: 46px;
@@ -49,27 +62,28 @@ section {
   position: absolute; 
   left: 0px;
   top:10px;
-  width: 200px;
+  width: 120px;
 }
 
 .atentoLogo {
   position: absolute; 
   right: 0px;
   top:0px;
+  width: 130px;
 }
 
 .curadoriaLogo {
   position: absolute;
   left: 20px;
   bottom:10px;
-  width: 150px;
+  width: 100px;
 }
 
 .treinamentoLogo {
   position: absolute;
   right: 20px;
   bottom:10px;
-  width: 180px;
+  width: 120px;
 }
 
 .mini-cur-logo {
@@ -112,19 +126,35 @@ section {
 
 
 .iniciarJogo:hover{
-  background-color:  rgba(8,1,75);
-  color: #ffc400;
+  background-color:  #01426a;
+  color: #ffffff;
   transition: background-color 1000ms linear;
 }
 
 
+.intro2{
+  max-width:600px;
+  max-height:500px;
+  min-width:418px;
+  min-height:204px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  left: 30%;
+}
+
 /*Estilo para página index imagens dos Dapolino*/
 .minionsTrio{
-  position:absolute; 
-  margin-top:-60px;
-  width: 250px;
-  height: 300px;
-  right: 150px;
+  max-width:250px;
+  max-height:300px;
+  min-width:80px;
+  min-height:150px;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  margin-right: 20%;
+  margin-top: -40px;
+
 }
 
 
@@ -133,31 +163,11 @@ section {
   background-image: url(../img/parede.png);
   background-repeat: repeat;
   background-size: 20% 100%;
-
-}
-
-.instrucao {
-  margin: 0px;
   display: flex;
-  align-items: center;
-  margin: auto;
-  flex-direction: row;
-  align-content:space-around;
+  flex-direction: row-reverse;
+
 }
 
-.instrucao img {
-  margin-left: 2%;
-  margin-right: 10%;
-}
-
-.intro2{
-  position: absolute;
-  width: 500px;
-  height: 450px;
-  margin-top: -200px;
-  z-index: 1;
-  left: 50px;
-}
 
 /*Estilo na página das bananas e flores e folhas animadas*/
 
@@ -197,10 +207,10 @@ section {
   left: 0px;
   top: 0px;
   width: 154px;
-  height: 40px;
-  border: 16px solid #01426a;
+  height: 25px;
+  border: 10px solid #01426a;
   background-color: #01426a;
-  font-size: 32px;
+  font-size: 30px;
   font-weight: bold;
   color: white;
 }
@@ -264,7 +274,7 @@ transition: transform .2s;
 
 .index-header {
   width: 100%;
-  height: 73px;
+  height: 50px;
   position: absolute; 
   left: 0px;
   top:-16px;
@@ -272,7 +282,7 @@ transition: transform .2s;
 }
 .index-footer {
   width: 100%;
-  height: 73px;
+  height: 50px;
   position: absolute; 
   left: 0px;
   bottom:-16px;
@@ -336,23 +346,23 @@ transition: transform .2s;
 }
 .erro section {
   height: 100%;
-  flex-direction: column;
+  flex-direction: row;
 }
 
 .proxFase {
-  font-size: 36px;
+  font-size: 30px;
 }
 
 .img-erro-acerto {
   position: absolute; 
 }
 .erro1 {
-  left: 50px;
+  left: 30px;
   bottom:50px;
   width: 450px;
 }
 .erro2 {
-  left: 400px;
+  left: 40px;
   bottom:50px;
   width: 480px;
 }
@@ -364,7 +374,7 @@ transition: transform .2s;
 .acerto1 {
   left: 0px;
   bottom:50px;
-  width: 800px;
+  width: 600px;
 }
 .acerto2 {
   right: 100px;
@@ -380,19 +390,19 @@ transition: transform .2s;
 .btn-final {
   width: 400px;
   font-size: 26px;
-  color: #ffc400;
-  background-color:  rgba(8, 1, 75);
+  color: #ffffff;
+  background-color:  #01426a;
 }
 
 .btn-final:hover {
-  color: rgba(8, 1, 75);
-  background-color:  #ffc400;
+  color: #01426a;
+  background-color:  #ffffff;
 }
 
 /* Area responsiva altera de acordo com a resolução da Tela*/
 
-/* Telas de até 1200px */
-@media only screen and (max-width: 1200px) {
+/* Telas de até 1400px */
+@media only screen and (max-width: 1400px) {
   .alternativa{
       font-size: 18px;
       width: 250px;
@@ -401,21 +411,11 @@ transition: transform .2s;
 
   .index-header {
     width: 100%;
-    height: 73px;
+    height: 55px;
     position: absolute; 
     left: 0px;
     top:-16px;
     background-color: #01426a;
-  }
-
-  .intro2{
-    width: 500px;
-    height: 450px;
-
-  }  
-
-  .minionsTrio{
-    right: 50px;
   }
 
   .minionPergunta {
@@ -424,13 +424,19 @@ transition: transform .2s;
     right: 0px;
   }
 
+  .div_balao p img {
+    margin-left: -60px;
+    width: 650px;
+  }
+
   .logo_uni {
-    width: 200px;
+    width: 120px;
   }
 
   .iniciarJogo{
-    width: 280px;
+    width: 250px;
     height: 70px;
+    font-size: 32px;
   }
 
   .erro-btn {
@@ -438,28 +444,28 @@ transition: transform .2s;
   }
   .erro-btn button {
     height: 70px;
-    font-size: 42px;
+    font-size: 32px;
   }
 
   .erro1 {
-    left: 5px;
+    right: 5px;
     bottom:60px;
     width: 350px;
   }
   .erro2 {
-    left: 300px;
+    left: 30px;
     bottom:60px;
-    width: 400px;
+    width: 350px;
   }
   .erro-banner {
-    right: 100px;
+    right: 20px;
     top:100px;
-    width: 650px;
+    width: 600px;
   }
   .acerto1 {
     left: 60px;
     bottom:60px;
-    width: 700px;
+    width: 500px;
   }
   .acerto2 {
     right: 40px;
@@ -475,7 +481,7 @@ transition: transform .2s;
 
   .index-header {
     width: 100%;
-    height: 73px;
+    height: 55px;
     position: absolute; 
     left: 0px;
     top:-16px;
@@ -483,27 +489,9 @@ transition: transform .2s;
   }
 
   .logo_uni {
-    width: 200px;
+    width: 120px;
   }
 
-  .minionsTrio{
-    position:absolute; 
-    margin-top:-40px;
-    width: 250px;
-    height: 300px;
-
-  }
-
-  .intro2{
-    width: 450px;
-    height: 400px;
-    margin-top: -1100px;
-    position: absolute;
-    right:30px;
-    right: 150px;
-
-  }
-  
   .alternativa{
       font-size: 16px;
       width: 220px;
@@ -531,8 +519,9 @@ transition: transform .2s;
   }
 
   .iniciarJogo{
-    width: 280px;
-    height: 70px;
+    width: 180px;
+    height: 50px;
+    font-size: 32px;
   }
 
   .erro-btn {
@@ -540,7 +529,7 @@ transition: transform .2s;
   }
   .erro-btn button {
     height: 70px;
-    font-size: 42px;
+    font-size: 32px;
   }
 
   .erro1 {
@@ -549,19 +538,19 @@ transition: transform .2s;
     width: 300px;
   }
   .erro2 {
-    left: 190px;
+    left: 20px;
     bottom:60px;
-    width: 370px;
+    width: 320px;
   }
   .erro-banner {
-    right: 20px;
-    top:100px;
-    width: 650px;
+    right: 0px;
+    top:50px;
+    width: 600px;
   }
   .acerto1 {
     left: 40px;
     bottom:60px;
-    width: 600px;
+    width: 400px;
   }
   .acerto2 {
     right: 40px;
@@ -577,7 +566,7 @@ transition: transform .2s;
  
   .index-header {
     width: 100%;
-    height: 73px;
+    height: 55px;
     position: absolute; 
     left: 0px;
     top:-16px;
@@ -585,39 +574,15 @@ transition: transform .2s;
   }
 
   .logo_uni {
-    width: 200px;
+    width: 120px;
   }
 
   .iniciarJogo{
-    width: 280px;
-    height: 70px;
+    width: 150px;
+    height: 50px;
     font-size: 26px;
   }
 
-
-
-  .instrucao {
-    flex-direction: column;
-
-  }
-
-  .minionsTrio{
-    position:absolute; 
-    margin-top:-40px;
-    width: 250px;
-    height: 300px;
-    right: 80px;
-  }
-
-  .intro2{
-    width: 450px;
-    height: 400px;
-    margin-top: -750px;
-    position: absolute;
-    right:30px
-
-  }
- 
   .alternativa{
       font-size: 13px;
       width: 180px;
@@ -658,19 +623,19 @@ transition: transform .2s;
     width: 240px;
   }
   .erro2 {
-    left: 190px;
+    left: 10%;
     bottom:50px;
     width: 290px;
   }
   .erro-banner {
-    right: 20px;
-    top:150px;
-    width: 550px;
+    right: 0px;
+    top:60px;
+    width: 500px;
   }
   .acerto1 {
     left: 40px;
     bottom:55px;
-    width: 500px;
+    width: 300px;
   }
   .acerto2 {
     right: 40px;
@@ -685,7 +650,7 @@ transition: transform .2s;
 
 .index-header {
   width: 100%;
-  height: 73px;
+  height: 55px;
   position: absolute; 
   left: 0px;
   top:-16px;
@@ -693,36 +658,13 @@ transition: transform .2s;
 }
 
   .logo_uni {
-    width: 200px;
+    width: 120px;
   }
 
   .iniciarJogo{
-    width: 280px;
-    height: 40px;
-    font-size: 18px;
-  }
-
-
-  .instrucao {
-    flex-direction: column;
-
-  }
-
-  .minionsTrio{
-    position:absolute; 
-    margin-top:-40px;
-    width: 250px;
-    height: 300px;
-    right: 30px;
-  }
-
-  .intro2{
-    width: 400px;
-    height: 350px;
-    margin-top: -700px;
-    position: absolute;
-    right:-15px
-
+    width: 100px;
+    height: 30px;
+    font-size: 12px;
   }
 
  .frutaAnimada{ 
@@ -766,12 +708,9 @@ transition: transform .2s;
     right: 0px;
   }
 
-  .erro-btn {
-    margin-top: 400px;
-  }
   .erro-btn button {
     height: 70px;
-    font-size: 32px;
+    font-size: 20px;
   }
 
   .erro1 {
@@ -780,19 +719,19 @@ transition: transform .2s;
     width: 200px;
   }
   .erro2 {
-    left: 70px;
+    left: 0px;
     bottom:50px;
     width: 290px;
   }
   .erro-banner {
     right: 0px;
     top:150px;
-    width: 440px;
+    width: 400px;
   }
   .acerto1 {
     left: 10px;
     bottom:50px;
-    width: 450px;
+    width: 250px;
   }
   .acerto2 {
     right: 10px;
@@ -802,9 +741,9 @@ transition: transform .2s;
 
   .btn-final {
     width: 280px;
-    font-size: 20px;
-    color: #ffc400;
-    background-color:  rgba(8, 1, 75);
+    font-size: 26px;
+    color: #ffffff;
+    background-color:  #01426a;
   }
 
 
