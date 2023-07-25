@@ -389,6 +389,8 @@ transition: transform .2s;
 
 .btn-final {
   width: 400px;
+  height: 30px;
+  padding: 10px 0px;
   font-size: 26px;
   color: #ffffff;
   background-color:  #01426a;
@@ -445,6 +447,14 @@ transition: transform .2s;
   .erro-btn button {
     height: 70px;
     font-size: 32px;
+  }
+  .btn-final {
+    width: 400px;
+    height: 30px;
+    padding: 10px 0px;
+    font-size: 26px;
+    color: #ffffff;
+    background-color:  #01426a;
   }
 
   .erro1 {
@@ -532,6 +542,15 @@ transition: transform .2s;
     font-size: 32px;
   }
 
+  .btn-final {
+    width: 280px;
+    font-size: 26px;
+    height: 30px;
+    padding: 5px 0px;
+    color: #ffffff;
+    background-color:  #01426a;
+  }
+
   .erro1 {
     left: 5px;
     bottom:60px;
@@ -614,6 +633,15 @@ transition: transform .2s;
   .erro-btn button {
     height: 70px;
     font-size: 32px;
+  }
+
+  .btn-final {
+    width: 280px;
+    font-size: 26px;
+    height: 30px;
+    padding: 5px 0px;
+    color: #ffffff;
+    background-color:  #01426a;
   }
 
   .erro1 {
@@ -742,6 +770,8 @@ transition: transform .2s;
   .btn-final {
     width: 280px;
     font-size: 26px;
+    height: 30px;
+    padding: 5px 0px;
     color: #ffffff;
     background-color:  #01426a;
   }
