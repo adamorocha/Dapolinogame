@@ -2,6 +2,7 @@ html, body {
   height: 100vh;
   height: 100%;
   overflow: hidden;
+  cursor: url('pointer.cur'), pointer;
 }
 
 /*Estilo Geral*/
@@ -15,6 +16,7 @@ body {
   font-family: Arial, Helvetica, sans-serif;
   background-repeat: no-repeat;
   background-size: cover;
+  cursor: url('pointer.cur'), auto;
 }
 
 section {
@@ -23,8 +25,17 @@ section {
   height: 33.33%;
 }
 
+a{
+  cursor: url('apointer.cur'), auto;
+}
+
+button{
+  cursor: url('apointer.cur'), auto;
+}
+
 .bd-index {
   background-image: url(../img/Erro_bg.jpg);
+  cursor: url('pointer.cur'), auto;
 }
 
 
@@ -47,14 +58,15 @@ section {
   height: 80px;
   border: 0px;
   font-weight: bold;
-  color: #01426a;
-  background-color: #ffffff;
+  color: #fff;
+  background-color: #f60;
   box-shadow: 8px 9px 3px -3px rgba(19, 19, 19, 0.603);
   cursor: pointer;
   font-size: 46px;
   font-family: Arial, Helvetica, sans-serif;
   transition: background-color 1000ms linear;
   z-index: 1;
+  cursor: url('apointer.cur'), auto;
 
 }
 
@@ -126,8 +138,8 @@ section {
 
 
 .iniciarJogo:hover{
-  background-color:  #01426a;
-  color: #ffffff;
+  background-color:  #fff;
+  color: #f60;
   transition: background-color 1000ms linear;
 }
 
@@ -232,6 +244,7 @@ section {
   font-size: 26px;
   margin: 0 auto;
   width: 400px;
+  cursor: url('apointer.cur'), auto;
 }
 .div_balao p img {
   margin-left: -110px;
@@ -251,6 +264,7 @@ section {
   font-size: 20px;
   font-family: Arial, Helvetica, sans-serif;
   position: relative;
+  cursor: url('apointer.cur'), auto;
 }
 
 .alternativa1 {
@@ -392,13 +406,13 @@ transition: transform .2s;
   height: 30px;
   padding: 10px 0px;
   font-size: 26px;
-  color: #ffffff;
-  background-color:  #01426a;
+  color: #f60;
+  background-color:  #fff;
 }
 
 .btn-final:hover {
-  color: #01426a;
-  background-color:  #ffffff;
+  color: #fff;
+  background-color:  #f60;
 }
 
 /* Area responsiva altera de acordo com a resolução da Tela*/
@@ -453,8 +467,8 @@ transition: transform .2s;
     height: 30px;
     padding: 10px 0px;
     font-size: 26px;
-    color: #ffffff;
-    background-color:  #01426a;
+    color: #f60;
+    background-color:  #fff;
   }
 
   .erro1 {
@@ -547,8 +561,6 @@ transition: transform .2s;
     font-size: 26px;
     height: 30px;
     padding: 5px 0px;
-    color: #ffffff;
-    background-color:  #01426a;
   }
 
   .erro1 {
@@ -640,8 +652,6 @@ transition: transform .2s;
     font-size: 26px;
     height: 30px;
     padding: 5px 0px;
-    color: #ffffff;
-    background-color:  #01426a;
   }
 
   .erro1 {
@@ -772,8 +782,6 @@ transition: transform .2s;
     font-size: 26px;
     height: 30px;
     padding: 5px 0px;
-    color: #ffffff;
-    background-color:  #01426a;
   }
 
 
